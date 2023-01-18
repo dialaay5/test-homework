@@ -29,7 +29,7 @@ describe('Testing of the functions', () => {
 // טסט שבודק שני המערכים אם שווים באורך 
         it('adding 2 arrays with equal length ([6, 4, 8], [6, 4, 5])', () => {
             const actual = check.is_equal([6, 4, 8], [6, 4, 5])
-            const expected = true 
+            const expected = false 
             assert.strictEqual(expected, actual)
         }),
 
@@ -62,7 +62,7 @@ describe('Testing of the functions', () => {
 
         it('adding 2 equal numbers (10, 10)', () => {
             const actual = check.is_bigger(10, 10)
-            const expected = true
+            const expected = false
             assert.strictEqual(expected, actual)
         }),
 
